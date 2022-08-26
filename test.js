@@ -1,10 +1,6 @@
-console.log("Hello World");
-
-module.exports = async () => {
-  const res = await request
-    .post("http://localhost:3000/api/v1/login")
-    .send(payload)
-    .set("Accept", "application/json")
-    .set("Content-Type", "application/json")
-    .set("Accept-Language", "en-US");
-};
+const subDoc = "contacts";
+const subDocId = "12345";
+const filter = { $pull: {} };
+filter.$pull[subDoc] = { id: subDocId };
+console.log(filter);
+console.log("");
