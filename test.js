@@ -11,3 +11,10 @@ console.log("------------------------------------------");
 console.log(new Date(1659196800 * 1000));
 const newDate2 = new Date("2022-7-31");
 console.log(newDate2);
+
+console.log("------------------------------------------");
+console.log("------------------------------------------");
+console.log("------------------------------------------");
+
+console.log(new Date("2022-8-1"));
+console.log(new Date("2022-8-31"));
